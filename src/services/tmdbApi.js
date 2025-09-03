@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_TMDB_API_KEY'; // Substitua pela sua chave da API do TMDB
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p';
 

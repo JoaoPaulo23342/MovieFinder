@@ -1,12 +1,107 @@
-# React + Vite
+# 🎬 Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação React para buscar filmes usando a API do TMDB (The Movie Database).
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Busca de filmes por título
+- 📄 Paginação dos resultados
+- 🎭 Página de detalhes do filme
+- ❤️ Sistema de favoritos com localStorage
+- 📱 Design responsivo
+- 🌟 Exibição de filmes populares
 
-## Expanding the ESLint configuration
+## 🚀 Como executar o projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Pré-requisitos
+
+- Node.js (versão 14 ou superior)
+- npm ou yarn
+- Chave da API do TMDB
+
+### Configuração
+
+1. **Clone o repositório:**
+   ```bash
+   git clone <url-do-repositorio>
+   cd projeto-prati
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure a API do TMDB:**
+   - Acesse [TMDB](https://www.themoviedb.org/settings/api)
+   - Crie uma conta e obtenha sua chave da API
+   - Copie o arquivo `.env` e substitua `YOUR_TMDB_API_KEY_HERE` pela sua chave:
+   ```
+   VITE_TMDB_API_KEY=sua_chave_aqui
+   ```
+
+4. **Execute o projeto:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Acesse a aplicação:**
+   Abra [http://localhost:5173](http://localhost:5173) no seu navegador
+
+## 🛠️ Tecnologias utilizadas
+
+- **React** - Biblioteca para construção da interface
+- **Vite** - Build tool e dev server
+- **React Router** - Roteamento
+- **Axios** - Cliente HTTP
+- **CSS3** - Estilização
+- **TMDB API** - Base de dados de filmes
+
+## 📁 Estrutura do projeto
+
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── Header/
+│   ├── Loading/
+│   ├── MovieCard/
+│   └── Pagination/
+├── pages/              # Páginas da aplicação
+│   ├── SearchPage/
+│   ├── MovieDetailsPage/
+│   └── FavoritesPage/
+├── services/           # Serviços de API
+│   └── tmdbApi.js
+├── hooks/              # Custom hooks
+│   └── useFavorites.js
+└── utils/              # Utilitários
+```
+
+## 🎯 Funcionalidades implementadas
+
+- [x] Configuração do projeto React com Vite
+- [x] Estrutura de pastas e componentes
+- [x] Integração com API do TMDB
+- [x] Página de busca com resultados
+- [x] Paginação
+- [x] Página de detalhes do filme
+- [x] Sistema de favoritos
+- [x] Roteamento
+- [x] Design responsivo
+- [x] Tratamento de erros
+- [x] Estados de loading
+
+## 📝 Como usar
+
+1. **Buscar filmes:** Digite o nome do filme na barra de pesquisa
+2. **Ver detalhes:** Clique no botão "Ver Detalhes" em qualquer filme
+3. **Adicionar aos favoritos:** Clique no coração para adicionar/remover dos favoritos
+4. **Ver favoritos:** Acesse a página de favoritos pelo menu
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
