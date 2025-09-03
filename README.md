@@ -23,7 +23,7 @@ Uma aplicação React para buscar filmes usando a API do TMDB (The Movie Databas
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/JoaoPaulo23342/MovieFinder/blob/master/README.md
+   git clone https://github.com/JoaoPaulo23342/MovieFinder.git
    cd projeto-prati
    ```
 
