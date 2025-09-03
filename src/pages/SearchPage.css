@@ -1,7 +1,14 @@
 .search-page {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
+}
+
+/* Padding específico para desktop */
+@media (min-width: 992px) {
+  .search-page {
+    padding: 4rem 3rem;
+  }
 }
 
 .search-header {
@@ -11,16 +18,34 @@
 
 .search-header h1 {
   color: #333;
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Título específico para desktop */
+@media (min-width: 992px) {
+  .search-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .search-form {
   display: flex;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
   align-items: center;
+}
+
+/* Formulário específico para desktop */
+@media (min-width: 992px) {
+  .search-form {
+    max-width: 900px;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .search-input-container {
@@ -30,11 +55,20 @@
 
 .search-input {
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
   transition: border-color 0.2s;
+}
+
+/* Input específico para desktop */
+@media (min-width: 992px) {
+  .search-input {
+    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 16px;
+  }
 }
 
 .search-input:focus {
@@ -66,16 +100,29 @@
   background: #007bff;
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  font-size: 1rem;
+  padding: 1.25rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
   white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Botão específico para desktop */
+@media (min-width: 992px) {
+  .search-btn {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 16px;
+  }
 }
 
 .search-btn:hover {
   background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.4);
 }
 
 .error-message {
@@ -115,9 +162,31 @@
 
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
   margin-bottom: 2rem;
+}
+
+/* Layout específico para desktop */
+@media (min-width: 1200px) {
+  .movies-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 .no-results {
